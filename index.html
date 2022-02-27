@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap style link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Search Cocktail</title>
+</head>
+
+<body>
+    <header class="container ">
+        <div class="nav-header">
+            <nav class="navbar navbar-light bg-light rounded-pill shadow-lg">
+                <div class="container ">
+                    <a class="navbar-brand mx-auto text-success fs-1 fw-bold nav-text" href="#">Search here your favorites Cocktail by letter!</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="d-flex justify-content-center h-100">
+            <div class="input-group mb-3 w-50 input-div">
+                <input id="search-field" type="text" class="form-control" placeholder="Search here" aria-label="Search here" aria-describedby="button-addon2">
+                <button onclick="loadCocktailByButton()" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+            </div>
+        </div>
+        <div class="error-div">
+            <p class="text-danger" id="error"></p>
+        </div>
+
+        <div id="cards-show" class="row">
+
+        </div>
+
+    </main>
+    <footer class="container">
+        <div class="card-footer text-muted text-center footer-div rounded">
+            <p>Copyright &copy; all rights reserved by anik.cse10@gmail.com/2022</p>
+        </div>
+    </footer>
+
+    <!-- script link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

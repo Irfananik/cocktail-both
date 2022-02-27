@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+.header-div {
+    height: 100%;
+}
+
+.nav-header {
+    margin-top: 200px;
+}
+
+.nav-text {
+    font-family: 'Redressed', cursive;
+}
+
+.input-div {
+    margin-top: 100px;
+}
+
+.footer-div {
+    margin-top: 400px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* see details card section */
+
+.see-details-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
