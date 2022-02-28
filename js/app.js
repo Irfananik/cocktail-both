@@ -1,5 +1,12 @@
 const cardShowDiv = document.getElementById('cards-show')
+
+// spinner show
+const showSpinner = spinnerDisplayStyle => {
+    document.getElementById('spinner').style.display = spinnerDisplayStyle
+}
+
 const loadCocktailByButton = () => {
+    showSpinner('block')
     const searchInput = document.getElementById('search-field')
     const error = document.getElementById('error')
     const searchText = searchInput.value
@@ -37,6 +44,7 @@ const displayCocktail = (cocktails) => {
         `
         cardShowDiv.appendChild(div)
     }
+    showSpinner('none')
 }
 
 // delete Card

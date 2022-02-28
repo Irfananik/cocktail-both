@@ -16,7 +16,7 @@
         <div class="nav-header">
             <nav class="navbar navbar-light bg-light rounded-pill shadow-lg">
                 <div class="container ">
-                    <a class="navbar-brand mx-auto text-success fs-1 fw-bold nav-text" href="#">Search here your favorites Cocktail by letter!</a>
+                    <a class="navbar-brand mx-auto text-success fs-1 fw-bold nav-text" href="#">Search your favorites Cocktail by letter!</a>
                 </div>
             </nav>
         </div>
@@ -27,6 +27,11 @@
             <div class="input-group mb-3 w-50 input-div">
                 <input id="search-field" type="text" class="form-control" placeholder="Search here" aria-label="Search here" aria-describedby="button-addon2">
                 <button onclick="loadCocktailByButton()" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+            </div>
+        </div>
+        <div class="spinner-styles" id="spinner">
+            <div class="spinner-border " role="status">
+                <span class="visually-hidden">Loading...</span>
             </div>
         </div>
         <div class="error-div">

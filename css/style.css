@@ -29,6 +29,12 @@
     justify-content: center;
 }
 
+.spinner-styles {}
+
+#spinner {
+    display: none;
+}
+
 
 /* see details card section */
 
