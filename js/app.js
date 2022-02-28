@@ -10,6 +10,8 @@ const loadCocktailByButton = () => {
         fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?f=${searchText}`)
             .then(response => response.json())
             .then(data => displayCocktail(data.drinks))
+    } else if (searchText.value = '') {
+        error.innerText = "please enter a letter!"
     } else {
         error.innerText = "please enter a letter!"
     }
@@ -23,17 +25,26 @@ const displayCocktail = (cocktails) => {
 
         div.classList.add('mt-3')
         div.innerHTML = `
-    <div class="card" style="width: 18rem;">
-        <img src="${cocktail.strDrinkThumb}" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">${cocktail.strDrink}</h5>
-            <p class="card-text"></p>
-            <button onclick="cardDetails(${cocktail.idDrink})" class="btn btn-primary">See Details</button>
+        <div class="card" style="width: 18rem;">
+            <img src="${cocktail.strDrinkThumb}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${cocktail.strDrink}</h5>
+                <p class="card-text"></p>
+                <button onclick="cardDetails(${cocktail.idDrink})" class="btn btn-primary">See Details</button>
+                <button onclick="cardDelate()" class="btn btn-danger">Delate</button>
+            </div>
         </div>
-    </div>
-    `
+        `
         cardShowDiv.appendChild(div)
     }
+}
+
+// delete Card
+const cardDelate = () => {
+    const myDiv = document.getElementById('cards-show')
+    const parent = myDiv.parentNode
+    parent.removeChild(myDiv)
+    console.log('success')
 }
 
 const cardDetails = (info) => {
